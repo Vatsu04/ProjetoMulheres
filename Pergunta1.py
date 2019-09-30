@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (QWidget, QApplication, QLabel, QHBoxLayout, QVBoxLa
                              QPushButton, QLineEdit, QGridLayout)
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+from Pergunta2 import Segunda_Pergunta
 
 import random
 '''
@@ -13,13 +14,15 @@ al = 0 # Ada Lovelace
 sg = 0 # Sonia Guimarães
 '''
 
-class Tela_Pergunta(QWidget):
+class Primeira(QWidget):
 
-    def __init__(self):
-        super().__init__()
-        self.initUI()
+    def __init__(self, parent):
         
-    def initUI(self):
+        super().__init__(parent)
+        #QWidget.__init__(self, parent)
+        self.initUI(parent)
+        
+    def initUI(self, parent):
         
         #Adiciona o Tamanho da Fonte
         fonte = QFont("Calibri", 20)
@@ -27,7 +30,6 @@ class Tela_Pergunta(QWidget):
         self.label_pergunta = QLabel("""1. Em qual área você mais se identifica?
                                      """)
         #label_pergunta.setAlignment(Qt.AlignCenter)
-        
         
         self.label_altA = QLabel("Matemática")
         self.label_altB = QLabel("Biologia")
@@ -45,11 +47,10 @@ class Tela_Pergunta(QWidget):
         buttonC = QPushButton("C")
         buttonD = QPushButton("D")
 
-        buttonA.clicked.connect(self.button_A)
+        buttonA.clicked.connect(parent.Segunda_Pergunta)
         buttonB.clicked.connect(self.button_B)
         buttonC.clicked.connect(self.button_C)
         buttonD.clicked.connect(self.button_D)
-
 
         # Adiciona o label_pergunta
         hbox_label = QHBoxLayout()
@@ -93,16 +94,18 @@ class Tela_Pergunta(QWidget):
         #...
 
         self.setLayout(vbox_button_e_alt)
-        self.showMaximized()
+       # self.showMaximized()
         self.show()
 
         
     def button_A(self):
-        kj = 0 # Katherine Johnson
+       ''' kj = 0 # Katherine Johnson
         kj = kj + 1 # Contador para Katherine Johnson
         print("Botão A")
         print("{}".format(kj))
-        
+       '''
+#       parent.Segunda_Pergunta()
+       
     def button_B(self):
         mz = 0 # Mayana Zats
         mz = mz + 1 # Contador para Mayana Zats
@@ -123,7 +126,8 @@ class Tela_Pergunta(QWidget):
         
     
 if __name__ == "__main__":
-
+    
     app = QApplication(sys.argv)
-    ex = Tela_Pergunta()
+    #ex = Primeira()
+    #ex.show()
     sys.exit(app.exec_())
