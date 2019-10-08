@@ -6,8 +6,11 @@ from PyQt5.QtCore import *
 
 class Tela_inicial(QWidget):
     
-    def __init__(self):
+    def __init__(self, parent):
         super().__init__()
+        
+        #Definindo plano de fundo das perguntas
+        parent.plano_de_fundo("imagem_perguntas.jpeg")
         
         self.initUI()
         
