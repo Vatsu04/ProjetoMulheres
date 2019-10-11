@@ -1,0 +1,79 @@
+pergunta1.png
+Matemática
+Katherine Johnson
+Biologia
+Mayana Zats
+Portugues
+Ada Lovelace
+Física
+Sonia Guimaraes
+
+pergunta2.png
+Israel
+Mayana Zats
+add m2
+Inglaterra  
+Ada Lovelace
+add m2
+São Paulo
+Sonia Guimarães
+add m2
+Estados Unidos  
+Katherine Johnson
+add m2
+
+pergunta3.png
+Cientista
+Marie Curie
+Katherine Johnson
+Política
+Berta Lutz 
+add m2
+Escritor(a)
+Ada Lovelace  
+add m2
+Medicina
+Mayana Zats  
+add m2
+
+pergunta4.png
+Persistente
+Sonia Guimarães
+Berta Lutz
+Inteligente 
+Katherine Johnson
+add m2
+Dedicado(a)
+Mayana Zats
+add m2 
+Determinado(a)
+Ada Lovelace
+Marie Curie
+
+pergunta5.png
+Leitura
+add m1
+add m2
+Programar Algoritmos
+add m1
+add m2 
+Ensinar alguma coisa
+add m1
+add m2
+Pintura
+add m1
+add m2
+
+pergunta6.png
+Verão
+Mayana Zats
+Katherine Johnson
+Primavera
+add m1
+add m2
+Inverno
+Sonia Guimarães
+Bertha Lutz
+Outono
+Ada Lovelace
+Marie Curie
