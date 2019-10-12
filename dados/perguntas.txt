@@ -1,18 +1,23 @@
 pergunta1.png
 Matemática
 Katherine Johnson
+add m2
 Biologia
 Mayana Zats
+add m2
 Portugues
 Ada Lovelace
+add m2
 Física
 Sonia Guimaraes
+add m2
+letra da resposta
 
 pergunta2.png
 Israel
 Mayana Zats
 add m2
-Inglaterra  
+Inglaterra
 Ada Lovelace
 add m2
 São Paulo
@@ -21,6 +26,7 @@ add m2
 Estados Unidos  
 Katherine Johnson
 add m2
+letra da resposta
 
 pergunta3.png
 Cientista
@@ -35,6 +41,7 @@ add m2
 Medicina
 Mayana Zats  
 add m2
+letra da resposta
 
 pergunta4.png
 Persistente
@@ -49,6 +56,7 @@ add m2
 Determinado(a)
 Ada Lovelace
 Marie Curie
+letra da resposta
 
 pergunta5.png
 Leitura
@@ -63,6 +71,7 @@ add m2
 Pintura
 add m1
 add m2
+letra da resposta
 
 pergunta6.png
 Verão
@@ -77,3 +86,4 @@ Bertha Lutz
 Outono
 Ada Lovelace
 Marie Curie
+letra da resposta

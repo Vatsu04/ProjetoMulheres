@@ -1,10 +1,10 @@
 class Pergunta:
 
-    def __init__(self, nome_da_imagem, lista_de_alternativas, lista_de_mulheres, resposta):
+    def __init__(self, nome_da_imagem, lista_de_alternativas, resposta, lista_de_mulheres):
         self.__nome_da_imagem = nome_da_imagem
-	self.__lista_de_alternativas = lista_de_alternativas
-	self.__lista_de_mulheres = lista_de_mulheres
+        self.__lista_de_alternativas = lista_de_alternativas
         self.__resposta = resposta
+        self.__lista_de_mulheres = lista_de_mulheres
 
     def get_nome_da_imagem(self):
         return self.__nome_da_imagem

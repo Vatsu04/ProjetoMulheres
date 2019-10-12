@@ -4,8 +4,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
-import random
-
 '''
 kj = 0 # Katherine Johnson
 mz = 0 # Mayana Zats
@@ -13,63 +11,73 @@ al = 0 # Ada Lovelace
 sg = 0 # Sonia Guimarães
 '''
 
-class Primeira_Pergunta(QWidget):
+class Tela_de_Resumo(QWidget):
 
-    def __init__(self): #, resumo, nome_imagem):
+    def __init__(self, mulher, imagem, resumo):
         super().__init__()
+        #self.__resumo = objeto_resumo
+        self.__mulher = mulher
+        self.__imagem = imagem
+        self.__resumo = resumo
+        
         self.initUI()
         
     def initUI(self):
         
-        titulo = QFont("Calibri", 20)
+        label_nome_da_mulher = QLabel(self.__mulher)
+        label_nome_da_mulher.setFont(QFont("Calibri", 30))
 
-        foto = QLabel(self)
-        pixmap = QPixmap("AdaLovelace.jpg")
-        foto.setPixmap(pixmap)
+        label_foto = QLabel()
+        pixmap = QPixmap(f"./{self.__imagem}")
+        label_foto.setPixmap(pixmap)
 
-        self.label_pergunta = QLabel("""
-                                              ADA LOVELACE
-
-        Mulher otimista, a condessa de lovelace também chamada de Ada lovelace.
-        Foi uma Matemática e escritora inglesa.
-        Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo
-        para ser processado por uma máquina, a máquina analética de Charles Bobbage.
-        Durante o período em que esteve envolvida com o projeto de Bobbage,
-        ela desenvolveu os algoritmos que permitiram á máquina computar os
-        valores de Funções Matemáticas, além de publicar uma coleção de notas
-        sobre a máquina analética, por esse trabalho é a primeira programadora
-        de toda a história. Recebeu op título de condessa em 1838 após seu marido,
-        William Lord King ser nomeado Conde de Lovelace.
-                                     """)
-
-        self.label_pergunta.setFont(titulo)
+        label_resumo = QLabel(self.__resumo)
+        label_resumo.setFont(QFont("Calibri", 20))
         
-        hbox_Label = QHBoxLayout()
-        hbox_Label.setAlignment(Qt.AlignCenter)
-        hbox_Label.addWidget(self.label_pergunta)
+        hbox_resumo = QHBoxLayout()
+        hbox_resumo.setAlignment(Qt.AlignCenter)
+        hbox_resumo.addWidget(label_resumo)
 
         vbox = QVBoxLayout()
-        vbox.addWidget(foto)
-        vbox.addLayout(hbox_Label)
+        vbox.setAlignment(Qt.AlignCenter)
+        vbox.addWidget(label_nome_da_mulher)
+        vbox.addWidget(label_foto)
+        vbox.addLayout(hbox_resumo)
 
         self.setLayout(vbox)
         self.show()
 
 class Roda_Resumo(QWidget):
 
-    def __init__(self):
+    def __init__(self, parent, mulher, imagem, resumo):
         super().__init__()
-        self.initUI()
+        #self.__obj_resumo = objeto_resumo
+        self.__mulher = mulher
+        self.__imagem = imagem
+        self.__resumo = resumo
+        
+        self.initUI(parent)
 
-    def initUI(self):
+    def initUI(self, parent):
 
-        tela_resumo = Primeira_Pergunta()
+        tela_resumo = Tela_de_Resumo(self.__mulher, self.__imagem, self.__resumo)
 
         barra_de_rolagem = QScrollArea(self)
         barra_de_rolagem.setWidget(tela_resumo)
-
+        
+        button_reiniciar = QPushButton("Reiniciar")
+        button_sair = QPushButton("Sair")
+        
+        button_sair.clicked.connect(parent.sair)
+        
+        hbox_buttons = QHBoxLayout()
+        hbox_buttons.addStretch(1)
+        hbox_buttons.addWidget(button_sair)
+        hbox_buttons.addWidget(button_reiniciar)
+        
         vbox = QVBoxLayout()
         vbox.addWidget(barra_de_rolagem)
+        vbox.addLayout(hbox_buttons)
 
         self.setLayout(vbox)
         
@@ -80,5 +88,4 @@ if __name__ == "__main__":
     
     app = QApplication(sys.argv)
     ex = Roda_Resumo()
-    #ex.show()
     sys.exit(app.exec_())
