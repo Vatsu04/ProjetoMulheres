@@ -4,34 +4,27 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
-'''
-kj = 0 # Katherine Johnson
-mz = 0 # Mayana Zats
-al = 0 # Ada Lovelace
-sg = 0 # Sonia Guimarães
-'''
-
 class Tela_de_Resumo(QWidget):
 
-    def __init__(self, mulher, imagem, resumo):
+    def __init__(self, objeto_resumo):
         super().__init__()
-        #self.__resumo = objeto_resumo
-        self.__mulher = mulher
-        self.__imagem = imagem
-        self.__resumo = resumo
+        self.__obj_resumo = objeto_resumo
         
         self.initUI()
         
     def initUI(self):
         
-        label_nome_da_mulher = QLabel(self.__mulher)
+        label_nome_da_mulher = QLabel(self.__obj_resumo.get_nome())
         label_nome_da_mulher.setFont(QFont("Calibri", 30))
+        label_nome_da_mulher.setAlignment(Qt.AlignCenter)
 
+        pixmap = QPixmap(f"./{self.__obj_resumo.get_nome_da_imagem()}")
+        
         label_foto = QLabel()
-        pixmap = QPixmap(f"./{self.__imagem}")
         label_foto.setPixmap(pixmap)
+        label_foto.setAlignment(Qt.AlignCenter)
 
-        label_resumo = QLabel(self.__resumo)
+        label_resumo = QLabel(self.__obj_resumo.get_resumo())
         label_resumo.setFont(QFont("Calibri", 20))
         
         hbox_resumo = QHBoxLayout()
@@ -49,25 +42,26 @@ class Tela_de_Resumo(QWidget):
 
 class Roda_Resumo(QWidget):
 
-    def __init__(self, parent, mulher, imagem, resumo):
+    def __init__(self, parent, objeto_resumo):
         super().__init__()
-        #self.__obj_resumo = objeto_resumo
-        self.__mulher = mulher
-        self.__imagem = imagem
-        self.__resumo = resumo
+        self.__obj_resumo = objeto_resumo
         
         self.initUI(parent)
 
     def initUI(self, parent):
 
-        tela_resumo = Tela_de_Resumo(self.__mulher, self.__imagem, self.__resumo)
+        tela_resumo = Tela_de_Resumo(self.__obj_resumo)
 
         barra_de_rolagem = QScrollArea(self)
         barra_de_rolagem.setWidget(tela_resumo)
         
         button_reiniciar = QPushButton("Reiniciar")
         button_sair = QPushButton("Sair")
-        
+
+        button_reiniciar.setFont(QFont("Calibri", 20))
+        button_sair.setFont(QFont("Calibri", 20))
+
+        button_reiniciar.clicked.connect(parent.reiniciar)
         button_sair.clicked.connect(parent.sair)
         
         hbox_buttons = QHBoxLayout()
@@ -80,8 +74,6 @@ class Roda_Resumo(QWidget):
         vbox.addLayout(hbox_buttons)
 
         self.setLayout(vbox)
-        
-        self.showMaximized()
         self.show()
        
 if __name__ == "__main__":

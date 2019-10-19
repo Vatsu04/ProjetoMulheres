@@ -1,5 +1,5 @@
 ada.jpg
-ADA LOVELACE
+Ada Lovelace
 Mulher otimista, a condessa de lovelace também chamada de Ada lovelace.
 Foi uma Matemática e escritora inglesa.
 Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo
@@ -12,7 +12,7 @@ de toda a história. Recebeu op título de condessa em 1838 após seu marido,
 William Lord King ser nomeado Conde de Lovelace.
 
 bertha_lutz.jpg
-BERTHA LUTZ
+Bertha Lutz
 Uma mulher forte. Era uma Cientista e Política Paulista.
 É uma das pioneiras da luta pelo voto feminino e pela
 igualdade de direito entre homens e mulheres no país,
@@ -34,7 +34,7 @@ Mary sendo uma mulher focada é considerada também a primeira
 mulher a receber um doutorado em ciência da computação.
 
 jacqueline_lyra.jpg
-JACQUELINE LYRA
+Jacqueline lyra
 A carioca extrovertida que chefiou o controle da
 temperatura da missão é Engenheira Espacial da NASA.
 Da primeira vez que “chegou”ao planeta vermelho,em
@@ -72,5 +72,5 @@ maior revolução do século 21.
 katherine_johnson.jpg
 Katherine Johnson
 A matemática da NASA.Ela É uma matemática e Ciéntista Espacial Afro-americana que colaborou com a
- National Aeronautcs and space Administration (NASA) ao calcular trajetórias 
+National Aeronautcs and space Administration (NASA) ao calcular trajetórias 
 de Voo espacial para projetos críticos tais como da viagem da apollo a lua em 1969.

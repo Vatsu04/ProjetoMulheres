@@ -5,12 +5,12 @@ class Leia_Perguntas:
     def __init__(self):
         self.__lista_de_perguntas = []
 
-        arquivo = open("../dados/perguntas.txt", "r")
+        arquivo = open("perguntas.txt", "r")
         lista_de_perguntas = arquivo.readlines()
         arquivo.close()
         
         for indice in range(0, len(lista_de_perguntas), 15):
-            nome_da_imagem = lista_de_perguntas[indice][0:-1]
+            nome_da_pergunta = lista_de_perguntas[indice][0:-1]
             
             lista_de_alternativas = []
             lista_de_mulheres = []
@@ -31,7 +31,7 @@ class Leia_Perguntas:
             
             resposta = lista_de_perguntas[indice + 13][0:-1]
             
-            pergunta = Pergunta(nome_da_imagem, lista_de_alternativas, resposta, lista_de_mulheres)
+            pergunta = Pergunta(nome_da_pergunta, lista_de_alternativas, resposta, lista_de_mulheres)
             self.__lista_de_perguntas.append(pergunta)
         
     #Método que mostra a lista de perguntas ao usuário

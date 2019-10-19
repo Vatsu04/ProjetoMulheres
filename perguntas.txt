@@ -1,0 +1,89 @@
+Em qual área vocẽ mais se identifica?
+Matemática
+Katherine Johnson
+add m2
+Biologia
+Mayana Zats
+add m2
+Portugues
+Ada Lovelace
+add m2
+Física
+Sonia Guimaraes
+add m2
+B
+
+Se você fosse passar férias em um lugar diferente, qual seria?
+Israel
+Mayana Zats
+add m2
+Inglaterra
+Ada Lovelace
+add m2
+São Paulo
+Sonia Guimarães
+add m2
+Estados Unidos  
+Katherine Johnson
+add m2
+A
+
+Qual seria sua profissão dos sonhos?
+Cientista
+Marie Curie
+Katherine Johnson
+Política
+Berta Lutz 
+add m2
+Escritor(a)
+Ada Lovelace  
+add m2
+Medicina
+Mayana Zats  
+add m2
+D
+
+Como seus amigos te descrevem?
+Persistente
+Sonia Guimarães
+Berta Lutz
+Inteligente 
+Katherine Johnson
+add m2
+Dedicado(a)
+Mayana Zats
+add m2 
+Determinado(a)
+Ada Lovelace
+Marie Curie
+C
+
+Qual seria seu hobby preferido?
+Leitura
+add m1
+add m2
+Programar Algoritmos
+add m1
+add m2 
+Ensinar alguma coisa
+add m1
+add m2
+Pintura
+add m1
+add m2
+B
+
+Qual clima vocẽ prefere?
+Verão
+Mayana Zats
+Katherine Johnson
+Primavera
+add m1
+add m2
+Inverno
+Sonia Guimarães
+Bertha Lutz
+Outono
+Ada Lovelace
+Marie Curie
+A

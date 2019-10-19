@@ -5,7 +5,7 @@ class Leia_Resumos:
     def __init__(self):
         self.__resumos = []
         
-        arquivo = open("dados/resumos.txt", "r")
+        arquivo = open("resumos.txt", "r")
         resumos = arquivo.readlines()
         arquivo.close()
         

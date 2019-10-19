@@ -1,7 +1,7 @@
 from leia_perguntas import *
 from random import choice
 
-class sorteia_pergunta:
+class Sorteia_Pergunta:
 
     def __init__(self):
         self.__lista_de_perguntas = Leia_Perguntas().get_lista_de_perguntas()
