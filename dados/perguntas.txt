@@ -1,0 +1,83 @@
+﻿pergunta1.png
+Matemática
+Katherine Johnson
+Jaqueline Lyra
+Biologia
+Mayana Zatz
+Bertha Lutz
+Portugues
+Ada Lovelace
+Irmã Mary Kenneth Keller
+Física
+Sonia Guimaraes
+Marie Curie
+
+pergunta2.png
+Israel
+Mayana Zatz
+Marie Curie
+Inglaterra
+Ada Lovelace
+Irmã Mary Kenneth Keller
+São Paulo
+Sonia Guimarães
+Bertha Lutz
+Estados Unidos  
+Katherine Johnson
+Jacqueline Lyra
+
+pergunta3.png
+Cientista
+Marie Curie
+Katherine Johnson
+Política
+Berta Lutz 
+Sônia Guimarães
+Escritor(a)
+Ada Lovelace  
+Irmã Mary Kenneth Keller
+Medicina
+Mayana Zatz  
+Jacqueline Lyra
+
+pergunta4.png
+Persistente
+Sonia Guimarães
+Berta Lutz
+Inteligente 
+Katherine Johnson
+Jacqueline Lyra
+Dedicado(a)
+Mayana Zatz
+Irmã Mary Kenneth Keller
+Determinado(a)
+Ada Lovelace
+Marie Curie
+
+pergunta5.png
+Leitura
+Katherine Johnson
+Mayana Zatz
+Programar Algoritmos
+Ada Lovelace
+Marie Curie
+Ensinar 
+Sônia Guimarães
+Bertha Lutz
+Computação
+Irmã Mary Kenneth Keller
+Jacqueline Lyra
+
+pergunta6.png
+Verão
+Mayana Zatz
+Katherine Johnson
+Primavera
+Jacqueline Lyra
+Irmã Mary Kenneth Keller
+Inverno
+Sonia Guimarães
+Bertha Lutz
+Outono
+Ada Lovelace
+Marie Curie
