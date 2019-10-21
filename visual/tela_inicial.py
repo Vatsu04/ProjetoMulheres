@@ -14,14 +14,14 @@ class Tela_inicial(QWidget):
     def initUI(self, parent):
 
         texto_inicial_label = QLabel("Seja bem vindo(a) ao Quiz das\nmulheres na Tecnologia\n", self)
-        texto_inicial_label.move(260, 250)
+        texto_inicial_label.move(210, 250)
         texto_inicial_label.setAlignment(Qt.AlignCenter)
         texto_inicial_label.setFont(QFont("Heltica", 40, QFont.Bold))
         texto_inicial_label.setStyleSheet("background-color: beige; color: purple")
         
         button_iniciar = QPushButton("Iniciar", self)
         button_iniciar.resize(300, 70)
-        button_iniciar.move(550, 390)
+        button_iniciar.move(500, 390)
         button_iniciar.setFont(QFont("Calibri", 20, QFont.Bold))
         button_iniciar.clicked.connect(parent.iniciar)
         button_iniciar.setStyleSheet("background-color: lightblue; color: purple")

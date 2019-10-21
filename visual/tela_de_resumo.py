@@ -13,7 +13,7 @@ class Tela_de_Resumo(QWidget):
         self.initUI(parent)
         
     def initUI(self, parent):
-        
+
         mulher = self.__nome_da_imagem[0:-5]
         
         if(mulher == "Irmã Mary Kenneth Keller"):
@@ -33,12 +33,12 @@ class Tela_de_Resumo(QWidget):
         
         button_reiniciar = QPushButton("Reiniciar", self)
         button_reiniciar.setFont(QFont("Calibri", 20, QFont.Bold))
-        button_reiniciar.move(1200, 650)
+        button_reiniciar.move(1100, 650)
         button_reiniciar.clicked.connect(parent.reiniciar)
         button_reiniciar.setStyleSheet("background-color: lightblue; color: purple")
         
         button_sair = QPushButton("Sair", self)
-        button_sair.move(1100, 650)
+        button_sair.move(1000, 650)
         button_sair.setFont(QFont("Calibri", 20, QFont.Bold))
         button_sair.clicked.connect(parent.sair)
         button_sair.setStyleSheet("background-color: lightblue; color: purple")
