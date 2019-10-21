@@ -1,4 +1,4 @@
-﻿Em qual área vocẽ mais se identifica?
+﻿Em qual área você mais se identifica?
 Matemática
 Katherine Johnson
 Jacqueline lyra
@@ -68,7 +68,7 @@ Computação
 Irmã Mary Kenneth Keller
 Jacqueline Lyra
 
-Qual clima vocẽ prefere?
+Qual clima você prefere?
 Verão
 Mayana Zatz
 Katherine Johnson

@@ -14,7 +14,7 @@ class Tela_Final(QWidget):
 
     def initUI(self, parent):
 
-        texto = QLabel(f"Parabéns! Você adivinhou a\n{self.__nome_da_mulher}")
+        texto = QLabel(f"Parabéns! Você se parece com\n{self.__nome_da_mulher}")
         texto.setAlignment(Qt.AlignCenter)
         texto.setFont(QFont("Calibri", 40, QFont.Bold))
         texto.setStyleSheet("background-color: lightblue; color: purple")

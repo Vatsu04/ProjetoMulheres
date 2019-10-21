@@ -13,7 +13,7 @@ class Tela_inicial(QWidget):
         
     def initUI(self, parent):
 
-        texto_inicial_label = QLabel("Seja bem vindo(a) ao Quiz das\nmulheres na Tecnologia\n", self)
+        texto_inicial_label = QLabel("Seja bem vindo(a) ao Quiz das\nMulheres na Ciência e Tecnologia\n", self)
         texto_inicial_label.move(210, 250)
         texto_inicial_label.setAlignment(Qt.AlignCenter)
         texto_inicial_label.setFont(QFont("Heltica", 40, QFont.Bold))
