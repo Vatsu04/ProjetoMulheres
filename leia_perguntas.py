@@ -9,8 +9,8 @@ class Leia_Perguntas:
         lista_de_perguntas = arquivo.readlines()
         arquivo.close()
         
-        for indice in range(0, len(lista_de_perguntas), 15):
-            nome_da_pergunta = lista_de_perguntas[indice][0:-1]
+        for indice in range(0, len(lista_de_perguntas), 14):
+            nome_da_pergunta = lista_de_perguntas[indice].strip()
             
             lista_de_alternativas = []
             lista_de_mulheres = []
@@ -18,10 +18,10 @@ class Leia_Perguntas:
             contador = indice + 1
             for num in range(0, 4):
                 
-                alternativa = lista_de_perguntas[contador + num][0:-1]
+                alternativa = lista_de_perguntas[contador + num].strip()
                 
-                mulher_1 = lista_de_perguntas[contador + num + 1][0:-1]
-                mulher_2 = lista_de_perguntas[contador + num + 2][0:-1]
+                mulher_1 = lista_de_perguntas[contador + num + 1].strip()
+                mulher_2 = lista_de_perguntas[contador + num + 2].strip()
                 
                 lista_de_alternativas.append(alternativa)
                 lista_de_mulheres.append(mulher_1)
@@ -29,9 +29,7 @@ class Leia_Perguntas:
                 
                 contador += 2
             
-            resposta = lista_de_perguntas[indice + 13][0:-1]
-            
-            pergunta = Pergunta(nome_da_pergunta, lista_de_alternativas, resposta, lista_de_mulheres)
+            pergunta = Pergunta(nome_da_pergunta, lista_de_alternativas, lista_de_mulheres)
             self.__lista_de_perguntas.append(pergunta)
         
     #Método que mostra a lista de perguntas ao usuário

@@ -16,7 +16,8 @@ class Tela_Final(QWidget):
 
         texto = QLabel(f"Parabéns! Você adivinhou a\n{self.__nome_da_mulher}")
         texto.setAlignment(Qt.AlignCenter)
-        texto.setFont(QFont("Calibri", 40))
+        texto.setFont(QFont("Calibri", 40, QFont.Bold))
+        texto.setStyleSheet("background-color: lightblue; color: purple")
         
         hbox_texto = QHBoxLayout()
         hbox_texto.setAlignment(Qt.AlignCenter)
@@ -24,7 +25,8 @@ class Tela_Final(QWidget):
 
         button_ver_resumo = QPushButton("Ver Resumo")
         button_ver_resumo.clicked.connect(parent.ver_resumo)
-        button_ver_resumo.setFont(QFont("Calibri", 20))
+        button_ver_resumo.setFont(QFont("Calibri", 20, QFont.Bold))
+        button_ver_resumo.setStyleSheet("background-color: lightblue; color: purple")
 
         hbox_button = QHBoxLayout()
         hbox_button.addStretch(1)

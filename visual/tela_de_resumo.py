@@ -6,78 +6,49 @@ from PyQt5.QtCore import *
 
 class Tela_de_Resumo(QWidget):
 
-    def __init__(self, objeto_resumo):
+    def __init__(self, parent, nome_da_imagem):
         super().__init__()
-        self.__obj_resumo = objeto_resumo
-        
-        self.initUI()
-        
-    def initUI(self):
-        
-        label_nome_da_mulher = QLabel(self.__obj_resumo.get_nome())
-        label_nome_da_mulher.setFont(QFont("Calibri", 30))
-        label_nome_da_mulher.setAlignment(Qt.AlignCenter)
-
-        pixmap = QPixmap(f"./{self.__obj_resumo.get_nome_da_imagem()}")
-        
-        label_foto = QLabel()
-        label_foto.setPixmap(pixmap)
-        label_foto.setAlignment(Qt.AlignCenter)
-
-        label_resumo = QLabel(self.__obj_resumo.get_resumo())
-        label_resumo.setFont(QFont("Calibri", 20))
-        
-        hbox_resumo = QHBoxLayout()
-        hbox_resumo.setAlignment(Qt.AlignCenter)
-        hbox_resumo.addWidget(label_resumo)
-
-        vbox = QVBoxLayout()
-        vbox.setAlignment(Qt.AlignCenter)
-        vbox.addWidget(label_nome_da_mulher)
-        vbox.addWidget(label_foto)
-        vbox.addLayout(hbox_resumo)
-
-        self.setLayout(vbox)
-        self.show()
-
-class Roda_Resumo(QWidget):
-
-    def __init__(self, parent, objeto_resumo):
-        super().__init__()
-        self.__obj_resumo = objeto_resumo
+        self.__nome_da_imagem = nome_da_imagem
         
         self.initUI(parent)
-
+        
     def initUI(self, parent):
-
-        tela_resumo = Tela_de_Resumo(self.__obj_resumo)
-
-        barra_de_rolagem = QScrollArea(self)
-        barra_de_rolagem.setWidget(tela_resumo)
         
-        button_reiniciar = QPushButton("Reiniciar")
-        button_sair = QPushButton("Sair")
+        mulher = self.__nome_da_imagem[0:-5]
+        
+        if(mulher == "Irmã Mary Kenneth Keller"):
+            mulher = "Mary Keller"
+            
+        label_nome_da_mulher = QLabel(mulher, self)
+        label_nome_da_mulher.move(550, 30)
+        label_nome_da_mulher.setFont(QFont("Arial", 30, QFont.Bold))
+        label_nome_da_mulher.setAlignment(Qt.AlignCenter)
+        label_nome_da_mulher.setStyleSheet("background-color: lightblue; color: purple")
 
-        button_reiniciar.setFont(QFont("Calibri", 20))
-        button_sair.setFont(QFont("Calibri", 20))
-
+        pixmap = QPixmap(f"./{self.__nome_da_imagem}")
+        label_imagem = QLabel(self)
+        label_imagem.setPixmap(pixmap)
+        label_imagem.move(300, 110)
+        label_imagem.setAlignment(Qt.AlignCenter)
+        
+        button_reiniciar = QPushButton("Reiniciar", self)
+        button_reiniciar.setFont(QFont("Calibri", 20, QFont.Bold))
+        button_reiniciar.move(1200, 650)
         button_reiniciar.clicked.connect(parent.reiniciar)
+        button_reiniciar.setStyleSheet("background-color: lightblue; color: purple")
+        
+        button_sair = QPushButton("Sair", self)
+        button_sair.move(1100, 650)
+        button_sair.setFont(QFont("Calibri", 20, QFont.Bold))
         button_sair.clicked.connect(parent.sair)
+        button_sair.setStyleSheet("background-color: lightblue; color: purple")
         
-        hbox_buttons = QHBoxLayout()
-        hbox_buttons.addStretch(1)
-        hbox_buttons.addWidget(button_sair)
-        hbox_buttons.addWidget(button_reiniciar)
-        
-        vbox = QVBoxLayout()
-        vbox.addWidget(barra_de_rolagem)
-        vbox.addLayout(hbox_buttons)
-
-        self.setLayout(vbox)
+        self.showMaximized()
+        self.setWindowTitle("Tela de Resumo")
         self.show()
-       
+
 if __name__ == "__main__":
     
     app = QApplication(sys.argv)
-    ex = Roda_Resumo()
+    ex = Tela_de_Resumo()
     sys.exit(app.exec_())
