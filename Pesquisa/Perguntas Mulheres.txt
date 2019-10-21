@@ -1,0 +1,41 @@
+1 . Em qual área voce mais se identifica?
+ a) Matemática  -->  Katherine Johnson
+ b) Biologia  -->  Mayana Zats
+ c) Portugues  -->  Ada Lovelace
+ d) Física  -->  Sonia Guimaraes
+
+2. Se vocë fosse passar férias em um lugar diferente, qual seria?
+ a) Israel  -->  Mayana Zats
+ b) Inglaterra  -->  Ada Lovelace
+ c) São Paulo  -->  Sonia Guimarães
+ d) Estados Unidos  -->  Katherine Johnson
+
+3. Qual profissäo seria sua profissao dos
+  sonhos?
+ a) Cientista  -->  Marie Curie , Katherine Johnson
+ b) Política  -->  Berta Lutz, Sônia Guimarães
+ c) Escritor(a)  --> Ada Lovelace
+ d) Medicina  --> Mayana Zats
+
+4. Seus amigos te descrevem como ...
+ a) Persistente  --> Sonia Guimarães, Berta Lutz
+ b) Inteligente  --> Katherine Johnson
+ c) Dedicado(a)   --> Mayana Zats
+ d) Determinado(a)  --> Ada Lovelace, Marie Curie
+
+ 
+5. Qual seria seu hobby preferido?
+  a) Leitura   --> 
+  b) Programar Algoritmos   --> 
+  c) Ensinar alguma coisa   --> 
+  d) Pintura
+
+6. Qual clima você prefere?
+  a) Verão   --> Mayana Zats, Katherine Johnson
+  b) Primavera   --> 
+  c) Inverno   --> Sonia Guimarães, Bertha Lutz
+  d) Outono   --> Ada Lovelace, Marie Curie
+
+
+
+
